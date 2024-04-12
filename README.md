@@ -1,5 +1,7 @@
 # Portfolio website
 
+**[check the website here](https://gouh0002.github.io/mtm6201_final/)**
+
 This is a portfolio website I created to showcase webdevelopment and design skills learnt during my scholarship at [Algonquincollege Interactive media design program](https://www.algonquincollege.com/mediaanddesign/program/interactive-media-design/).
 
 Creating this website was a rewarding process, starting fromscratch the design part using Figma going from a low fidelity wireframe anditerating with feedback from our professor and peers until the full functioningprototype.
