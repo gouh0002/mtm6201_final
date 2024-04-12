@@ -1,6 +1,6 @@
 # Portfolio website
 
-**[check the website here](https://gouh0002.github.io/mtm6201_final/)**
+**[Check the website here](https://gouh0002.github.io/mtm6201_final/)**
 
 This is a portfolio website I created to showcase webdevelopment and design skills learnt during my scholarship at [Algonquincollege Interactive media design program](https://www.algonquincollege.com/mediaanddesign/program/interactive-media-design/).
 
@@ -26,6 +26,6 @@ The photographs used in this website and the visual elements are all taken by me
 
 Except pictures used in the background for about page sections (Photography portfolio and Webdesign Portfolio) retreived from creative common filter in [Flicker](https://www.flickr.com/creativecommons/)
 
-## Figma prototype (pdf included in ths assets folder)
+## Figma prototype (pdf included in the assets folder)
 
 https://www.figma.com/file/EmIbmJMZCOaGbXwj8QhlVH/Hi-Fi-Wireframe?type=design&node-id=2102:91&mode=design&t=YTg7y8Mh3bnKNtCX-1
