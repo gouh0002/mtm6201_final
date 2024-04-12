@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three Star Media</title>
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Overlay CSS library -->
+  <link rel="stylesheet" href="css/overlay.min.css">
+  <!-- Custom CSS Link -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="pb-5" itemscope itemtype="https://schema.org/ProfilePage">
+  <ul class="skip-links">
+    <li><a href="#navigation" accesskey="n">Skip to main nav (Alt+N)</a></li>
+    <li><a href="#about-me" accesskey="c">Skip to content (Alt+C)</a></li>
+    <li><a href="#footer" accesskey="f">Skip to footer (Alt+F)</a></li>
+  </ul>
+  <header itemprop="hasPart" itemscope itemtype="http://schema.org/WPHeader">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" aria-label="Main navigation">
+      <div class="container-xl">
+        <!-- website logo -->
+        <a class="navbar-brand" href="index.html">
+          <picture>
+            <source media="(max-width: 640px)" srcset="images/logox0.5.png, images/logox0.75.png 1.5x">
+            <source media="(min-width: 640px)" srcset="images/logo.png, images/logox1.5.png 1.5x">
+
+            <img src="images/logo_55x55fff.png" alt="Hanane design logo">
+          </picture>
+        </a>
+        <!-- hamburger menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav fw-bold" id="navigation" itemprop="hasPart" itemscope
+            itemtype="http://schema.org/SiteNavigationElement">
+            <a class="nav-link " href="/">Home</a>
+            <a class="nav-link ps-lg-4 active" aria-current="page" href="about.html">About</a>
+            <a class="nav-link ps-lg-4" href="work.html">Work</a>
+            <a class="nav-link ps-lg-4" href="#" onclick="displayContactForm()" role="button">Contact</a>
+          </div>
+          <!-- closes .navbar-nav -->
+        </div>
+        <!-- closes .navbar-collapse -->
+      </div>
+      <!-- closes .container-xl -->
+    </nav>
+  </header>
+  <main class="pb-5" aria-label="Main content" itemprop="mainEntity">
+    <div class="container-xl">
+      <section id="about-me" class="d-flex flex-lg-row flex-column" aria-label="About Me section" itemprop="about"
+        itemscope itemtype="https://schema.org/Person">
+        <h5 class="d-lg-none card card-title my-2 bg-secondary py-4 text-center" aria-level="2">
+          About Me
+        </h5>
+        <div class="d-flex col-lg-6 col-12 my-3 pe-lg-2">
+          <div id="my-picture" class="d-flex me-lg-1 flex-grow-1 justify-content-center">
+            <!-- set different profile picture sizes -->
+            <picture>
+              <source media="(max-width: 640px)" srcset="
+                    images/profile_picture0.5x.jpg,
+                    images/profile_picture0.75x.jpg 1.5x
+                  ">
+              <source media="(max-width: 1280px)" srcset="
+                    images/profile_picture.jpg,
+                    images/profile_picture2x.jpg 2x
+                  ">
+              <source media="(min-width: 1280px)" srcset="
+                    images/profile_picture2x.jpg,
+                    images/profile_picture3x.jpg 1.5x
+                  ">
+
+              <img src="images/profile_picture1.5x.jpg" alt="Photo of Hanane Gouhmid" title="Photo of Hanane Gouhmid"
+                itemprop="image" class="img-fluid">
+            </picture>
+          </div>
+        </div>
+        <div id="about-me-text" class="col-lg-6 col-12 p-0 p-lg-2">
+          <div class="card">
+            <div class="card-body p-0 p-lg-2">
+              <h5 class="d-none d-lg-block card-title mb-2 bg-secondary py-4 text-center">
+                About Me
+              </h5>
+              <p class="card-text my-4 text-justify" itemprop="disambiguatingDescription">
+                Hello! My name is <span itemprop="name">Hanane</span>, I am an
+                aspiring <span itemprop="jobTitle">web developer</span> with a
+                unique blend of skills in
+                <span itemprop="knowsAbout">interactive media design</span>,
+                <span itemprop="knowsAbout">photography</span>,
+                <span itemprop="knowsAbout">video</span>, and
+                <span itemprop="knowsAbout">user experience (UX) design</span>. My mission is to create websites that
+                not only function
+                seamlessly but also engage users visually and emotionally.
+                With a solid foundation in photography and video, I bring a
+                sharp eye for aesthetics and storytelling to my web
+                development projects. My focus on UX design ensures that every
+                website I build is not just visually appealing but also
+                intuitive and user-friendly.
+                <span itemprop="makesOffer">By choosing me as your web developer, you're not only
+                  getting technical expertise but also a creative mind that
+                  understands the power of visuals and user experience in
+                  making a lasting impression. Let's collaborate to bring your
+                  digital vision to life!</span>
+              </p>
+            </div>
+            <!-- closes .card-body -->
+          </div>
+        </div>
+      </section>
+      <!-- closes .banner -->
+      <div id="portfolio-links" class="h-100" itemprop="workExample">
+        <div class="h-100">
+          <div class="row h-100 fs-3 text-center" itemscope itemtype="https://schema.org/CreativeWork">
+            <div itemscope itemtype="https://schema.org/ImageGallery"
+              class="col-md-6 d-flex align-items-center justify-content-center my-3">
+              <a itemprop="exampleOfWork" href="work.html" class="portfolio-link photography py-5 w-100">
+                <div class="py-5 text-dark">Photography Portfolio</div>
+              </a>
+            </div>
+            <div itemscope itemtype="https://schema.org/CreativeWork"
+              class="col-md-6 d-flex align-items-center justify-content-center my-3">
+              <a itemprop="exampleOfWork" href="#" class="portfolio-link webdesign py-5 w-100">
+                <div class="py-5 text-dark">Webdesign Portfolio</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- closes .container-xl -->
+    </div>
+    <!-- closes .container-xl -->
+  </main>
+  <footer id="footer" class="footer text-light bg-dark py-sm-4 pb-3 fixed-bottom" itemprop="hasPart" itemscope
+    itemtype="http://schema.org/WPFooter">
+    <div class="container-xl">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-sm-8 text-center text-sm-start order-sm-1 order-2">
+          <p class="mb-0">© 2024 Hanane Design. All rights reserved.</p>
+        </div>
+        <div class="col-sm-4 text-sm-right text-center order-sm-2 order-1">
+          <div class="d-flex justify-content-center justify-content-sm-end">
+            <a href="#" class="btn btn-outline-light mr-2" aria-label="Facebook link">
+              <i class="bi bi-facebook fs-sm-4" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light mr-2" aria-label="Instagram link">
+              <i class="bi bi-instagram fs-sm-4" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light" aria-label="Twitter link">
+              <i class="bi bi-twitter-x fs-sm-4" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- overlay js library -->
+  <script src="js/overlay.min.js"></script>
+  <!-- custom overlay contact form  -->
+  <script src="js/contact-form.js"></script>
+</body>
+
+</html>

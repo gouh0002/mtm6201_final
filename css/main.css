@@ -1,0 +1,145 @@
+:root,
+[data-bs-theme="light"],
+[data-bs-theme="dark"] {
+  --bs-primary: #1db2c6;
+  --bs-primary-rgb: 29, 178, 198;
+  --bs-secondary: #6f6f6f;
+  --bs-secondary-rgb: 111, 111, 111;
+  --cs-primary-light: #a9e4ec;
+  --cs-primary-light-rgb: 169, 228, 236;
+  --cs-text-with-bg: white;
+  --bs-border-radius-lg: 0px;
+  --animate-delay: 4s;
+}
+
+.btn {
+  border-radius: 0 !important;
+  --bs-btn-border-width: 0;
+}
+
+.btn-primary {
+  --bs-btn-color: var(--cs-text-with-bg);
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--cs-primary-light);
+  --bs-btn-hover-border-color: var(--cs-primary-light);
+  --bs-btn-active-color: var(--bs-primary);
+  --bs-btn-active-bg: var(--cs-primary-light);
+  --bs-btn-active-border-color: var(--cs-primary-light);
+  --bs-btn-disabled-color: var(--bs-primary);
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.card {
+  --bs-card-title-color: var(--cs-text-with-bg);
+  --bs-card-border-width: 0;
+  --bs-card-border-radius: 0;
+}
+
+.navbar[data-bs-theme="dark"] {
+  --bs-navbar-active-color: var(--bs-primary);
+  --bs-navbar-hover-color: var(--bs-primary);
+  --bs-navbar-color: var(--bs-light);
+}
+
+/* custon CSS */
+
+/* Skip links styling to be hidden and display on focus*/
+.skip-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skip-links a {
+  text-decoration: none;
+  color: rgb(255, 249, 249);
+  font-weight: bold;
+  font-size: larger;
+  position: absolute;
+  top: -50px;
+  background-color: rgb(var(--bs-primary-rgb));
+  padding: 0.5rem;
+}
+
+/* Adjusts link position when focused. */
+.skip-links a:focus {
+  top: 20px;
+  z-index: 100;
+}
+
+.banner {
+  background: white url(../images/desktop_banner2x.png) no-repeat center center;
+  background-size: cover;
+}
+
+.outlined-text {
+  text-shadow: 2px 3px 4px rgba(var(--bs-secondary-rgb), 0.6);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--bs-secondary);
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.custom-btn {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 12px 35px;
+  background-color: rgba(var(--bs-secondary-rgb), 0.5);
+  border-color: transparent;
+}
+
+#my-picture {
+  background: #eee2d1;
+}
+
+.text-justify {
+  text-align: left;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+/* set the backround images for the portfolio links in the about me page */
+
+.portfolio-link {
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+
+  text-shadow: 2px 3px 4px rgba(var(--bs-secondary-rgb), 1);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--bs-light);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.photography {
+  background-image: url("../images/photography_portfolio_bg1x.png");
+}
+
+.webdesign {
+  background-image: url("../images/webdesign_portfolio_bg1x.png");
+}
+
+/* end for background images */
+
+/* customize animation from animate.css */
+img.animate__headShake:hover,
+img.animate__headShake:active,
+img.animate__headShake:focus {
+  animation: pulse 0.5s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-nav {
+    align-items: center;
+  }
+  .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+}
